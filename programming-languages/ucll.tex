@@ -1,0 +1,40 @@
+\section{Curriculum}
+
+\begin{frame}
+  \tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}
+  \frametitle{Curriculum}
+  \begin{center}
+    \begin{tikzpicture}[label/.style={fill=gray!25,minimum width=3cm,minimum height=1cm},
+                        hlabel/.style={label},
+                        vlabel/.style={label,rotate=90}]
+      \node[vlabel,anchor=south west] at (0,0) {sem.~1};
+      \node[vlabel,anchor=south east] at (0,0) {sem.~2};
+      \node[hlabel,anchor=south west] at (0,3) {jaar 1};
+      \node[hlabel,anchor=south west] at (3,3) {jaar 2};
+      \node[hlabel,anchor=south west] at (6,3) {jaar 3};
+
+      \draw[thick] (-1,0) -- (9,0);
+      \draw[thick] (3,-3) -- (3,4);
+      \draw[thick] (6,-3) -- (6,4);
+
+      \node[language] at (1.5,2.5) {Java};
+      \node[language] at (1.5,1.5) {Javascript};
+      \node[language] at (1.5,0.5) {Assembly};
+
+      \node[language] at (1.5,-1.5) {Python};
+
+      \node[language] at (4.5,-0.5) {\csharp};
+      \node[language] at (4.5,-1.5) {\cpp};
+      \node[language] at (4.5,-2.5) {TypeScript};
+    \end{tikzpicture}
+  \end{center}
+\end{frame}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "programming-languages"
+%%% End:

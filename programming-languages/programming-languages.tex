@@ -1,0 +1,43 @@
+\documentclass[dutch]{ucll-slides}
+\usepackage{pxfonts}
+\usepackage{tikz}
+\usepackage{calc}
+\usepackage{fmtcount}
+\usepackage{bbding}
+
+
+\usetikzlibrary{calc,shadows,math}
+
+\title{Programmeertalen}
+
+\newcommand{\csharp}{C$^\sharp$}
+\newcommand{\cpp}{C++}
+\newcommand{\pro}{\Checkmark}
+\newcommand{\con}{\XSolidBrush}
+
+
+\newcounter{dummy}
+
+\tikzset{
+  /tikz/.cd,
+  language/.style={drop shadow,fill=blue!50,font=\scshape,minimum height=.75cm,minimum width=1.5cm}
+}
+
+
+\begin{document}
+
+\maketitle
+
+\input{intro.tex}
+\input{comparison.tex}
+\input{langs.tex}
+\input{ucll.tex}
+
+\end{document}
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
